@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash | Hoyoverse</title>
+
+    <style type="text/css">
+        body {
+            color: #000000;
+            text-align: left;
+            background: #ffffff;
+            margin: 0; 
+            padding: 0; 
+        }
+        .main.content {
+            width: 70%; 
+            margin: 0 auto; 
+            background-color: white;
+            padding: 20px;
+            border-left: 2px solid black; 
+            border-right: 2px solid black; 
+            box-sizing: border-box; 
+        }
+        #content {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 30px;
+            max-width: 1366px;
+            margin: 10 auto;
+        }
+
+        #content>* {
+            padding: 30px;
+        }
+        .header {
+    padding: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    grid-column: 1/13;
+    grid-row: 1/4;
+    font-size: large;
+    background-image: url('./hoyoverse.png');
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 20px; 
+    grid-row-gap: 10px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.mission h1{
+    margin-left: 70px;
+    margin-top: 90px;
+    color: black;
+    font-size: 50px;
+}
+
+
+ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0,0.8);
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            width: 100%; 
+            position:fixed;
+            z-index: 1000;
+
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            position: relative; 
+
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 40px 30px;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            transition: all 0.3s ease; 
+        }
+
+        li a::after {
+            content: ''; 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px; 
+            background-color: transparent; 
+            transition: all 0.3s ease; 
+        }
+
+        li a:hover::after {
+            background-color: lightskyblue; 
+        }
+
+        li a:hover {
+            color: lightskyblue;
+            font-weight: bold; 
+            font-size: 110%; 
+
+        }
+
+        .header {
+  padding: 350px; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: url('./hoyoverse.jpg') center center/cover;  
+  color: white;
+  grid-column: 1/13;
+  grid-row: 1/4;
+  font-size: large;
+  
+        }
+
+.members
+{
+    grid-row:1/1;
+    grid-column:1/13;
+    text-align: center;
+}
+.miguel{
+    grid-column:1/5;
+    grid-row:2/4;
+}
+.mark{
+    grid-column:5/9;
+    grid-row:2/4;
+}
+.viloria{
+    grid-column:9/13;
+    grid-row:2/4;
+}
+.miguel img,
+.mark img,
+.viloria img{
+    width: 80%; 
+        height: 80%; 
+
+}
+.footer{
+    grid-column: 1/13;
+    background-color: #000000;
+    color:#ffffff;
+    text-align: center;
+    grid-row:4/5;
+}
+.footer img{
+    width: 20%; 
+        height: 50%; 
+}
+.footer span{
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+  
+    <ul>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./hoyo.png" height="30%" width="50%"></div>
+        <font size="4">
+            <li><a href="index.html"><strong>Splash</strong></a></li>
+            <li><a href="intro.html"><strong>Main</strong></a></li>
+            <li><a href="about.html"><strong>About</strong></a></li>
+            <li><a href="what.html"><strong>Advocacy</strong></a></li>
+            <li><a href="activities.html"><strong>Updates</strong></a></li>
+            <li><a href="members.html"><strong>Members</strong></a></li>
+            <li><a href="Update.html"><strong>News</strong></a></li>
+            <li><a href="Contact.html"><strong>Contact</strong></a></li>
+            <li><a href="Developers.html"><strong>Developers</strong></a></li>
+        </font>        
+    </ul>
+
+    <div class="header">
+  
+    </div>
+    
+
+
+<div class="container">
+<div class="members ">
+<h1>Members</h1>
+</div>
+<div class="miguel">
+    <img src="./miguel.png"><br><br>
+    Miguel Jason G. Marmolejo<br>
+    Designer
+</div>
+<div class="mark">
+    <img src="./mark.png"><br><br>
+    Mark Andrew Catabian<br>
+    Programmer
+</div>
+<div class="viloria">
+    <img src="./viloria.png">
+    <br><br>
+    James Erol Viloria<br>
+    Ui Designer and Content Developer
+</div>
+    
+
+    <div class="footer"><br>
+        <img src="./hoyo.png"><br>
+        <span>Copyright © COGNOSPHERE. All Rights Reserved.</span>
+        
+    </div>
+</div>
+</body>
+
+</html>

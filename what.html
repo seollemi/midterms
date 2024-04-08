@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style type="text/css">
+        body {
+            color: #000000;
+            text-align: left;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 70%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        #content {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 30px;
+            max-width: 1366px;
+            margin: 10 auto;
+        }
+
+        #content>* {
+            padding: 30px;
+        }
+
+        .header {
+            padding: 500px;
+            text-align: center;
+            background: url('stars.gif') center center/cover no-repeat;
+            background-size: 100% auto;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            position: relative;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 40px 30px;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        li a:hover::after {
+            background-color: lightskyblue;
+        }
+
+        li a:hover {
+            color: lightskyblue;
+            font-weight: bold;
+            font-size: 110%;
+        }
+
+        img {
+            height: 30%;
+            width: 50%;
+            margin-left: 10px;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        h2 {
+            font-size: xxx-large;
+        }
+
+        #myBtnContainer {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 22.22%;
+            padding: 10px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 5px;
+            transition: transform 0.3s;
+        }
+
+        .content:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content img {
+            width: 100%;
+        }
+
+        .content h4 {
+            margin-top: 10px;
+            font-size: large;
+        }
+
+        .content p {
+            font-size: medium;
+        }
+
+        .image-and-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: xx-large;
+        }
+
+        .image-container {
+            flex: 1;
+            order: 1;
+        }
+
+        .image-container img {
+            max-height: 500%;
+            max-width: 500%;
+        }
+
+        .text-container {
+            flex: 1;
+            order: 2;
+            padding-left: 5px; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./hoyo.png" height="30%" width="50%"></div>
+        <font size="4">
+            <li><a href="index.html"><strong>Splash</strong></a></li>
+            <li><a href="intro.html"><strong>Main</strong></a></li>
+            <li><a href="about.html"><strong>About</strong></a></li>
+            <li><a href="what.html"><strong>Advocacy</strong></a></li>
+            <li><a href="activities.html"><strong>Updates</strong></a></li>
+            <li><a href="members.html"><strong>Members</strong></a></li>
+            <li><a href="Update.html"><strong>News</strong></a></li>
+            <li><a href="Contact.html"><strong>Contact</strong></a></li>
+            <li><a href="Developers.html"><strong>Developers</strong></a></li>
+        </font>
+    </ul>
+
+    <div class="header">
+        <h1</h1>
+            <p></p>
+    </div>
+    <div class="main">
+        <h2 style="font-family:Arial, Helvetica, sans-serif; font-size: xxx-large;">Objectives</h2>
+      <p style="font-family:Arial, Helvetica, sans-serif; font-size: x-large;">The official statement said that HoYoverse's goal is "to create and deliver immersive virtual world experiences for global players", including technology research in areas such as artificial intelligence, cloud computing, and industrial capability building.</p>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="./1.png" style="max-height: 500%; max-width: 500%;" alt="Description of the image">
+    </div>
+      <br>
+      <h2 style="font-family:Arial, Helvetica, sans-serif; font-size: xxx-large;">Advocacy</h2>
+      <p style="font-family:Arial, Helvetica, sans-serif; font-size: x-large;">Adhering to our mission of Tech Otakus Save the World, we have always been committed to technology research and development, exploring cutting-edge technologies, and have accumulated leading technical capabilities in cartoon rendering, artificial intelligence, cloud gaming technology, and other fields.</p>
+      <br>
+      <h2>What They Do</h2>
+      <div style="display: flex; justify-content: flex-start; align-items: flex-start;">
+        <img src="./4.jpg" alt="Description of the image" style="max-width: 200%; max-height: 200%;">
+        <div>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: xx-large; text-align: right;">Become a witness and facilitator of a young and growing company on the path to globalization
+            </p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: right;">I really like HoYoverse's flat management style. Although the company has reached a certain size, I never felt that there was excessive bureaucracy. We usually make project decisions based on everyone's work experience and expertise, rather than just blindly following upper management. This allows us to focus on our work, which allows the team to gain greater cohesion and keeps the company dynamic and growing fast.</p>
+        </div>
+    </div>
+    
+        <div style="display: flex; justify-content: flex-start; align-items: flex-start;">
+            <div>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: xx-large; text-align: left;">Your mindset and company culture will both determine how far you will go.</p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: large;">Pursuing excellence is a quality that HoYoverse highly values in its hiring process. At HoYoverse, direct, open, and free communication will stimulate your creativity and inspire you to keep going. We will never define what is absolutely right, and will always encourage fresh thinking and new ideas. With this team spirit, our job is not just to get things done, but to work together to create content and experiences that are beyond our imagination.</p>
+            </div>
+            <img src="./5.jpg" alt="Description of the image" style="max-width: 200%; max-height: 200%;">
+        </div>
+        
+
+        
+        
+    </div>
+
+</body>
+
+</html>
+
